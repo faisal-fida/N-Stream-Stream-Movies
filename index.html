@@ -1,0 +1,210 @@
+<head>
+  <title>N-Stream - Watch Free Movies Hollywood & Bollywood</title>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEAKPAA4DjgAPBq8AEASSAA8FpgATCeUAFAnlABUJ5QASCuQADwalAAAAAQAPBrAAAQABAAABAAABAQAAEgnmABMJ5gAVCuUAGg/fABAFsgAPBrEAAQEBABkN4gAPA5MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxUUABYJCAsAAAAAAAAAAA8VFQAXBgYLAAAAAAAAAAAPFRUOBgYYCwAAAAAAAAAADxUVCwYGAwsAAAAAAAAAAA8VAxAGBxULAAAAAAAAAAAPFQoGBgIVCwAAAAAAAAAADxUBBhIFFQsAAAAAAAAAAA8VBwYRDBULAAAAAAAAAAAPDAYGABUVCwAAAAAAAAAADwQGBgAVFQsAAAAAAAAAAA8GBhMAFRULAAAAAAAAAAANBgYNABUVCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <style>
+
+body {
+  background-color: rgb(22, 6, 6);
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+}
+.cssbuttons-io-button {
+  background: #2a7da0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.content {
+  text-align: center;
+  padding: 30px;
+  margin: 0px auto;
+}
+
+.details {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: black;
+}
+
+table,
+td {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+  </style>
+<br>
+
+<center>
+<p id="printhere"></p>
+
+<input class="cssbuttons-io-button" type="text" id="nMovie" value="Dune">
+
+</br>
+<button class="cssbuttons-io-button" onclick="hello()"> Watch Movie
+  
+  <div class="icon">
+    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+  </div>
+</button>
+
+<p id="printhere"></p>
+
+    <div class="details">
+
+    <br/>
+    <div id="user-img"></div>
+
+    <br>
+  </center>  
+      <table>
+
+        <tr>
+          <td>Title</td>
+          <td><span id="title"></span></td>
+        </tr>
+        
+        <tr>
+          <td>Overview</td>
+          <td><span id="oView"></span></td>
+        </tr>
+        
+        <tr>
+          <td>Released</td>
+          <td><span id="release_date"></span></td>
+        </tr>
+        
+        <tr>
+          <td>Rating</td>
+          <td><span id="vote_average"></span></td>
+        </tr>
+        <br>
+      </table>
+    </div>
+ 
+  </div>
+  <br>
+<center>
+<iframe id="myIframe" width="900px" height="560px" allowfullscreen="true" 
+scrolling="no" frameborder="0"></iframe>
+</center>
+
+<script>
+
+
+  async function hello()
+  {
+        
+        var nameMovie = document.getElementById("nMovie").value;
+          
+          const api_url = "https://api.themoviedb.org/3/search/movie?api_key=6f8f6888ceb53ca6e7bc69af471a4636&language=en-US&query="+nameMovie+"&page=1&include_adult=false";
+          const response = await fetch(api_url);
+    
+          // Parsing it to JSON format
+          const data = await response.json();
+          console.log(data.results);
+    
+          const movie = data.results[0];
+          let id = movie.id;
+          let myIframe = document.getElementById("myIframe");
+          let url_string = `https://www.2embed.ru/embed/tmdb/movie?id=${id}`;
+          myIframe.src = url_string;
+          let title = movie.title;
+          let oView = movie.overview;
+          let release_date = movie.release_date;
+          let vote_average = movie.vote_average;
+          
+          let image = "https://www.themoviedb.org/t/p/w200/"+movie.poster_path;
+    
+          
+      document.querySelector("#title").textContent = title;
+        document.querySelector("#oView").textContent = oView;
+        document.querySelector("#release_date").textContent = release_date;
+        document.querySelector("#vote_average").textContent = vote_average;
+    
+    
+        let img = document.createElement("img");
+      let img_div = document.getElementById("user-img");
+      img.src = image;
+      img_div.append(img);
+          
+      setTimeout(continueExecution, 3000);
+    function continueExecution()
+    {
+      window.scrollTo({ top: 800, behavior: 'smooth' });
+    }
+    }
+    
+    
+    
+    
+
+
+</script>
+  </body>
+</html>
